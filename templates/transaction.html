@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>Past Transactions</h1>
+<table>
+	<tr>
+		<th>MealID</th>
+		<th>Burger</th>
+		<th>Sidemeal</th>
+		<th>Drink</th>
+		<th>Price</th>
+		<th>Date</th>
+		<th>Discount</th>
+	</tr>
+	{% for i in range(leng) %}
+		<tr>
+			<td>{{orders[i][0]}}</td>
+			<td>{{meals[i][0]}}</td>
+			<td>{{meals[i][1]}}</td>
+			<td>{{meals[i][2]}}</td>
+			<td>{{orders[i][1]}}</td>
+			<td>{{orders[i][2]}}</td>
+			<td>{{orders[i][3]}}</td>
+		</tr>
+	{% endfor %}
+</table>
+
+{% endblock %}

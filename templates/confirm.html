@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+<br>
+<h1>Online Transactions Available</h1>
+<form action="{{url_for('success')}}" method="POST">
+	{% for i in range(length) %}
+	<div class='spread'>
+		<p><b>{{cards[i]}}</b></p>
+		<img src="static/{{ logos[i] }}">
+		<p>-----------------------------------</p>
+		<input type="radio" name="paymethod" value="{{ cards[i] }}">
+	</div>
+	{% endfor %}
+	<br>
+	<br>
+	<div class="middle">
+		<button class="button">Proceed</button>
+	</div>
+</form>
+
+{% endblock %}

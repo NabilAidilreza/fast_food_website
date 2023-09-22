@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block body %}
+<form action="{{url_for('changepassword')}}" method="POST">
+	<div class='login'>
+	<fieldset>
+		<legend>Personal Info</legend>
+		<div class="box">
+			<label>Name: {{info[0]}}</label>
+		</div>
+		<div class="box">
+			<label>Location: {{info[1]}}</label>
+		</div>
+		<div class="box">
+			<label>Email: {{info[2]}}</label>
+		</div>
+		<div class="box">
+			<label>Password: {{info[3]}}</label>
+		</div>
+		<div class="box">
+			<label>New Password:</label>
+			<input type='text' name='newpassword' placeholder='New Password'>
+		</div>
+		<button class="button">Change Password</button>
+	</fieldset>
+	</div>
+</form>
+{% endblock %}
+

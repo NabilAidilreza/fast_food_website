@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+<form action="{{url_for('processlogin')}}" method="POST">
+	<div class='login'>
+	<fieldset>
+		<legend>Login Credentials</legend>
+		<div class="box">
+			<label>Email:</label>
+			<input type='text' name='email' placeholder='Email'>
+		</div>
+		<div class="box">
+			<label>Password:</label>
+			<input type='password' name='password' placeholder='Password'>
+		</div>
+		<div class='shift'>
+			<button class="button">Proceed</button>
+		</div>
+	</fieldset>
+	</div>
+</form>
+{% endblock %}

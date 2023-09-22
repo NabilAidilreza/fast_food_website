@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<form action="{{url_for('order')}}" method="POST">
+	{% if top_3 != None %}
+		<h1>TOP 3 Meals For You</h1>
+		<div class="flex-contain">
+			{% for i in range(3) %}
+				<div class='mealset'>
+					{% if i % 2 == 0 %}
+						<img src="static/{{ images[0] }}">
+					{% else %}
+						<img src="static/{{ images[1] }}">
+					{% endif %}
+					<p style="float:right;"><b>{{top_3[i][0]}}</b></p>
+					<p><b>Burger</b>: {{top_3[i][1]}}</p>
+					<p><b>Sidemeal</b>: {{top_3[i][2]}}</p>
+					<p><b>Drink</b>: {{top_3[i][3]}}</p>
+					<p><b>Price</b>: ${{top_3[i][4]}}</p>
+					<button class="button" name='selected' value='{{top_3[i][0]}}'>Add To Cart</button>
+				</div>
+			{% endfor %}
+		</div>
+		<p>{{ line }}</p>
+	{% endif %}
+	<div class='flex-contain'>
+		{% for i in range(index)%}
+			<div class='mealset'>
+				{% if i % 2 == 0 %}
+					<img src="static/{{ images[0] }}">
+				{% else %}
+					<img src="static/{{ images[1] }}">
+				{% endif %}
+				<p style="float:right;"><b>{{meals[i][0]}}</b></p>
+				<p><b>Burger</b>: {{meals[i][1]}}</p>
+				<p><b>Sidemeal</b>: {{meals[i][2]}}</p>
+				<p><b>Drink</b>: {{meals[i][3]}}</p>
+				<p><b>Price</b>: ${{meals[i][4]}}</p>
+				<button class="button" name='selected' value='{{meals[i][0]}}'>Add To Cart</button>
+			</div>
+		{% endfor %}
+	</div>
+</form>
+{% endblock %}

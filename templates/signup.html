@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+<form action="{{url_for('processsignup')}}" method="POST">
+	<div class='login'>
+	<fieldset>
+		<legend>Sign Up Credentials</legend>
+		<div class="box">
+			<label>Name:</label>
+			<input type='text' name='personal' placeholder='Name'>
+		</div>
+		<div class="box">
+			<label>Location:</label>
+			<input type='text' name='personal' placeholder='Name'>
+		</div>
+		<div class="box">
+			<label>Email:</label>
+			<input type='text' name='personal' placeholder='Email'>
+		</div>
+		<div class="box">
+			<label>Password:</label>
+			<input type='text' name='personal' placeholder='Password'>
+		</div>
+		<div class='shift'>
+			<button class="button">Proceed</button>
+		</div>
+	</fieldset>
+	</div>
+</form>
+{% endblock %}

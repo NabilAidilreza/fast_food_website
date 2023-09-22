@@ -1,0 +1,3 @@
+Joe John,Bukit Batok,JJ@mail.com,JJPASS
+Kok Long,Punggol,KL@gmail.com,KLVERY
+Bala Bole,Admiralty,BB@mail.com,BBBOLA

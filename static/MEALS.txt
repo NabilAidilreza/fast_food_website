@@ -1,0 +1,23 @@
+Chicken Burger,French Fries,Cola,4.00
+Fish Burger,Potato Mash,Ice Lemon Tea,5.50
+Beef Burger,French Fries,Ice Lemon Tea,4.90
+Cheese Burger,French Fries,Cola,6.50
+Double Trouble Burger,French Fries,Ice Lemon Tea,10.50
+Pop Up Burger,Potato Mash,Soda,13.50
+Yeet Burger,Potato Mash,Soda,15.90
+Ham Burger,French Fries,Cola,8.00
+All In One Burger,Potato Mash,Cola,18.90
+Chicken Burger,-,-,2.10
+Fish Burger,-,-,3.40
+Beef Burger,-,-,3.10
+Cheese Burger,-,-,2.60
+Double Trouble Burger,-,-,6.60
+Pop Up Burger,-,-,8.90
+Yeet Burger,-,-,4.70
+Ham Burger,-,-,5.40
+All In One Burger,-,-,12.30
+-,French Fries,-,1.00
+-,Potato Mash,-,1.20
+-,-,Cola,1.60
+-,-,Ice Lemon Tea,2.00
+-,-,Soda,1.30

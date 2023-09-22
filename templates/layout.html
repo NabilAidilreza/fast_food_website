@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='stylesheet' href = "{{ url_for('static', filename = 'styleG.css') }}" type="text/css">
+</head>
+<body> 
+<div class="topnav">
+  <a class="active" href="">BurgersGalore</a>
+  <a href="{{ url_for('main') }}">Menu</a>
+  <a href="{{ url_for('order') }}">Order</a>
+  {% if login != [] %}
+  	<div class="topnav-right">
+		<a href="{{ url_for('profile') }}">Profile</a>
+		<a href="{{ url_for('transactions') }}">Transactions</a>
+		<a href="{{ url_for('logout') }}">Log Out</a>
+	</div>
+  {% else %}
+	<div class="topnav-right">
+		<a href="{{ url_for('login') }}">Log In</a>
+		<a href="{{ url_for('signup') }}">Sign Up</a>
+	</div>
+  {% endif %}
+</div> 
+{% block body %} {% endblock %} 
+</body> 
+</html>

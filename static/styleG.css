@@ -1,0 +1,132 @@
+<style>
+
+html {
+    height: 100%;
+}
+img{
+	height: 200px;
+	width: 200px;
+}
+h1{
+	text-align: center;
+	margin: 30px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #4CAF50;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.login {
+	padding-top:150px;
+	width: 300px;
+	margin:auto;
+}
+.shift {
+	margin-left:30%;
+}
+.box {
+	margin: 30px 0px 30px 0px;
+}
+.flex-contain{
+	display:flex;
+	flex-wrap: wrap;
+}
+.mealset{
+	background-color: #f1f1f1;
+	margin: 35px;
+	width:400px;
+	height: 400px;
+}
+.mealset p{
+	display: block;
+	margin: 20px;
+}
+.mealset button{
+	float:right;
+	position:relative;
+	bottom:40px;
+	right: 20px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+a:link, a:visited {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+}
+.spread{
+	display: inline-block;
+	margin-left: 45px;
+	margin-right: 45px;
+}
+.spread img{
+	display: inline;
+	height: 200px;
+	width: 200px;
+}
+.middle{
+	position: relative;
+	left: 700px;
+}
+</style>
