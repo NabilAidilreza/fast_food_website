@@ -6,4 +6,4 @@ Mock fast food website for my final year project in junior college.
 
 Utilized Flask, SQLite (DB) and Python.
 
-Features included such as add to cart, payment page, calculations of total items.
+Features included such as profile signin, add to cart, payment page, calculations of total items.
